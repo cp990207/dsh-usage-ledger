@@ -1,0 +1,47 @@
+{
+  "name": "dsh-usage-ledger",
+  "version": "1.1.1",
+  "description": "DeepSeek Harness plugin: a local usage ledger for token consumption, cache hit rate and estimated cost, per day, per model and per workspace.",
+  "type": "module",
+  "license": "MIT",
+  "author": "白白酱 <cp990207@users.noreply.github.com> (https://github.com/cp990207)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cp990207/dsh-usage-ledger.git"
+  },
+  "homepage": "https://github.com/cp990207/dsh-usage-ledger#readme",
+  "bugs": {
+    "url": "https://github.com/cp990207/dsh-usage-ledger/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "usage",
+    "tokens",
+    "cost",
+    "ledger"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Bundle defaults. Per-model prices live in the plugin's built-in catalog
+# (index.js DEFAULT_PRICES) and are configurable at runtime via the ⚙ Prices
+# button in the ledger, which writes a user profile patch row on save.
+- insert:
+    - id: usage-ledger
+      name: 'dsh-usage-ledger'
+      config:
+        currency: USD

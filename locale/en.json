@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Usage Ledger",
+    "description": "Aggregates token and model consumption across sessions: per-day usage, tool vs conversation split, cache ratio, and cost."
+  }
+}
